@@ -1,112 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Responsive Webpage Design</title>
-	<style type="text/css">
-		*{
-			box-sizing: border-box;
-		}
-
-		.header{
-			font-size: 50px;
-			background-color: orange;
-		}
-
-		.footer{
-			font-size: 20px;
-			background-color: orange;
-			
-		}
-
-		.container::after{
-			content: "";
-			clear: both;
-			display: block;
-		}
-
-		.menu li{
-			padding: 10px;
-			margin-bottom: 7px;
-			box-shadow: 0 0 10px darkgoldenrod;
-			background-color: lightgoldenrodyellow;
-		}
-		.menu li:hover{
-			background-color: orange;
-			color: white;
-		}
-
-		[class*=col-]{
-			float: left;
-			padding: 20px;
-			
-		}
-		/*mobile first*/
-		[class*="col-"]{
-			width: 100%;
-		}
-		
-		@media only screen and (min-width: 768px){
-		.col-1{width: 8.33%}
-		.col-2{width: 16.66%}
-		.col-3{width: 25%}
-		.col-4{width: 33.33%}
-		.col-5{width: 41.66%}
-		.col-6{width: 50%}
-		.col-7{width: 58.33%}
-		.col-8{width: 66.66%}
-		.col-9{width: 75%}
-		.col-10{width: 83.33%}
-		.col-11{width: 91.66%}
-		.col-12{width: 100%}
-	}
-		@media only screen and (max-width:998px){
-		.col-s-1{width: 8.33%}
-		.col-s-2{width: 16.66%}
-		.col-s-3{width: 25%}
-		.col-s-4{width: 33.33%}
-		.col-s-5{width: 41.66%}
-		.col-s-6{width: 50%}
-		.col-s-7{width: 58.33%}
-		.col-s-8{width: 66.66%}
-		.col-s-9{width: 75%}
-		.col-s-10{width: 83.33%}
-		.col-s-11{width: 91.66%}
-		.col-s-12{width: 100%}
-		}
-
-	</style>
-
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Homework</title>
+        <link rel="stylesheet" type="text/css" href="hw_demo.css">
 </head>
 <body>
-	<header class="header">Quackit</header>
-	<div class="container">
+   <header class="nav_panel">
+      <img src="logo.png" alt="logo">
+      <ul class="nav_menu ">
+         <li><a href="#">My Cart</a></li>
+         <li><a href="#">My Account</a> </li>
+        <li><a href="#">Services</a> </li>
+        <li><a href="#">Products</a> </li>
+        <li><a class="active" href="#"> Home</a></li>
 
-	<nav class="col-3 col-s-3 menu">
-		<ul style="list-style-type: none;">
-			<li>Flexbox-Introduction</li>
-			<li>Create a flexbox</li>
-			<li>Nested Flexbox</li>
-			<li>create a Responsive Layout</li>
-			<li>Create a Media Object</li>
-		</ul>
-	</nav>
+      </ul>
+   </header>
+        <div class="header">
+             <h1 style="font-size: 60px; color: white; padding-left: 25px;">Dramatically Engage</h1>
+             <p class="text">Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+             <p><a class="engage_now" href="#">Engage now</a></p>
+        </div>
 
-	<section class="col-6 col-s-9">
-		<h2>CSS Flexbox</h2>
-		<p>CSS flexbox (also referred to as flexible box) provides web authors with control over how elements are positioned, aligned, and sized within their container. It allows you to do things like, specify how elements are aligned vertically and horizontally, change their order or appearance, change the direction in which all elements are laid out, and more.</p>
-	</section>
+        <div style="text-align: center;">
+           <h2 style="color: #dd845a; font-size: 40px;">Superior Quality</h2>
+           <p style="color: grey; padding-left: 35px; padding-right: 35px;">Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products without collateral.</p>
+        </div>
 
-	<aside class="col-3 col-s-12" > 
+        <div class="container">
+            <div ><img src="sprouts.jpg" class="img1 col-4"> 
+               <div class="text1">Unleash</div>
+            </div>
 
-		<h3>HTML</h3>
-		<p>HTML (HyperTextMarkupLanguage) is the language is the language of the web. It allows you to create web pages and place anything you like on them (well, almost anything!)</p>
+            <div ><img src="coffee.jpg" class="img2 col-4"> 
+               <div class="text2">Synergize</div>
+            </div>
+            
+            <div ><img src="grapes.jpg" class="img3 col-4"> 
+               <div class="text3">Procrastinate</div>
+            </div>
+         </div>
 
-	</aside>
+         <div style="text-align: center;">
+            <h2 style="color: #dd845a; font-size: 40px;">Unparalleled Service</h2>
+           <p style="color: grey; padding-left: 35px; padding-right: 35px;">Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products without collateral.</p>
 
-	</div>
-	<footer class="footer col-12">Resize the browser window to see how the content respond to the resizing </footer>
+           <img src="https://www.quackit.com/html/templates/download/bootstrap/business-1/images/service.jpg" alt="picture" style="border-radius: 50%;" >
+           <h2 style="color: #dd845a; font-size: 40px;">Find Us</h2>
+           <h4 style="color: grey; font-size: 25px;">31 Spooner Street, Quahog, Rhode Island</h4>
+           <h2 style="color: #dd845a; ">Contact Us</h2>
+           <p style="font-size: 20px; color: grey;" > 
+              +1(23) 456 7890</p>
+            <p style="font-size: 20px; color: grey;" > info@example.com</p>
+            
+         </div>
 
+         
+         
+         <footer>
+            
+            <div class="footer">
+
+                  <h3 style="color: black;">Information</h3>
+                  <ul class="list">
+                     <li><a href="#" >About Us</a></li>
+                     <li><a href="#" >Customer Service</a></li>
+                     <li><a href="#" >Privacy Policy</a></li>
+                     <li><a href="#" >Sitemap</a></li>
+                     <li><a href="#" >Orders & Returns</a></li>
+                  </ul>
+
+            </div>
+
+
+            <div class="footer">
+
+                  <h3 style="color: black;">My Account</h3>
+                  <ul class="list">
+                     <li><a href="#" >Sign In</a></li>
+                     <li><a href="#" >View Cart</a></li>
+                     <li><a href="#" >My Wishlist</a></li>
+                     <li><a href="#" >Track My Order</a></li>
+                     <li><a href="#" >Help</a></li>
+                  </ul>
+
+            </div>
+
+
+            <div class="footer">
+
+               <h3 style="color: black;">Newsletter</h3>
+               <p style="color: grey;">Sign up for exclusive offers</p>
+               <input type="email" placeholder="Enter your email address" >
+               <button>Subscribe!</button>
+
+            </div>
+         
+         </footer>
+      
+         
+
+
+        
 </body>
 </html>
